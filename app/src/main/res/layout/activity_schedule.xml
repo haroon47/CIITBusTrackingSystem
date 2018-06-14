@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#282828"
+    tools:context="com.mytracker.minibustracker.bustracker.ScheduleActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:id="@+id/driverToolbar"
+
+        ></android.support.v7.widget.Toolbar>
+
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/driverToolbar"
+        android:layout_marginTop="51dp"
+        android:text="SCHEDULE"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Weekly Schedule"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:background="@color/colorPrimary"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="32dp"
+       android:text="Monday to Friday\n 6:30 AM to 5:30 PM"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Weekends Schedule"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:background="@color/colorPrimary"
+        android:layout_below="@+id/textView6"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView5"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:text="As specified by university"
+        android:layout_alignParentEnd="true"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_alignParentStart="true" />
+
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/banner_ad"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+    </com.google.android.gms.ads.AdView>
+
+
+
+</RelativeLayout>

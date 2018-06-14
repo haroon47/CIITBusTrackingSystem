@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Bus Tracker</string>
+    <string name="title_activity_my_navigation">Bus Tracker</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="banner_ad">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstitial">ca-app-pub-3940256099942544/1033173712</string>
+</resources>

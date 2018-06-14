@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#282828"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:id="@+id/driverToolbar"
+
+        ></android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:id="@+id/linearLayout"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/rsz_bus" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textColorHint="#ffffff"
+            android:background="#5d5d5d"
+            android:padding="10dp"
+            android:hint="NAME"
+            android:textSize="20sp"
+            android:inputType="text"
+            android:id="@+id/editText" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:hint="EMAIL"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            android:textStyle="bold"
+            android:background="#5d5d5d"
+            android:padding="10dp"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="5dp"
+            android:id="@+id/editText2" />
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="#5d5d5d"
+            android:hint="PASSWORD"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/editText4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="#5d5d5d"
+            android:hint="BUS NUMBER"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/btnlogin"
+            android:text="REGISTER"
+            android:onClick="registerDriver"
+            android:background="#1bde59" />
+    </LinearLayout>
+
+</RelativeLayout>

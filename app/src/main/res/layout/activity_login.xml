@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#282828"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:id="@+id/userToolbar"
+
+        ></android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:id="@+id/linearLayout"
+        android:layout_below="@+id/userToolbar"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="43dp">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/rsz_bus" />
+
+        <RadioGroup
+            android:id="@+id/radioOption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <RadioButton
+                android:id="@+id/radioDriver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Driver"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/radioUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:text="User" />
+
+        </RadioGroup>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:hint="EMAIL"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            android:textStyle="bold"
+            android:background="#5d5d5d"
+            android:padding="10dp"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="5dp"
+            android:id="@+id/editText2" />
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="#5d5d5d"
+            android:hint="PASSWORD"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnlogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#1bde59"
+            android:onClick="login"
+            android:padding="10dp"
+            android:text="LOGIN"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+</RelativeLayout>
